@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <img class="Logo" src="assets/images/Logo.png" alt="Logo">
+    </header>
+
+<main>
+
+<section>
+    <textarea class="text__area" placeholder="ingresar el texto aqui" cols="30" rows="10"></textarea>
+
+    <div><h6 class="informacion">Solo letras minusculas y sin acentos</h6></div>
+    <div class="botones">
+        <button class="boton__encriptar" onclick="btnEncriptar()">Encriptar</button>
+        <button class="boton__desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+    </div>
+</section>
+
+<section class="container">
+    <textarea class="mensaje" cols="20" rows="10"></textarea>
+    <div>
+        <button class="copiar" onclick="copiarTexto()">copiar</button>
+    </div>
+</section>
+
+
+</main>
+
+<footer class="footer">Estudiante: Alejandro Hernández Aranda</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
